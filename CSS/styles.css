@@ -139,4 +139,57 @@ font-weight: 700;
     font-size: 20px;
     margin-right: 130px;
     }
+    .contacto  {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+        }
+    @media screen and (min-width: 767px) {
+        .contacto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+        .menu_icon {
+            display: none;
+                 
+        }
+        main {
+        display: flex;
+       
+        }
+        .container2,
+        .container {
+           flex: 1;
+           background-repeat: no-repeat;
+           background-size: cover;
+        } 
+        .container {
+        order: 1;
+        margin-left: 0;
+        }
+        .container2 {
+        order: 0;
+        margin-right: 0;
+        }
+
+    }
+.contacto ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: row;
+}
+.contacto a {
+text-decoration: none;
+color: #F3F3F3;
+margin-right: 15px;
+font-weight: 400;
+display: block;
+padding: 10px;
+top: 40px;
+}
+
     
