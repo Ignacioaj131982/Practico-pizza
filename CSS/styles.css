@@ -81,12 +81,13 @@ right: 140px;
 color: #222222;
 font-weight: 700;
 }
-.imagen2 img {
-    width: 86.94px;
-    height: auto;
+.ingredientes img {
     position: relative;
-    left: 270px;
+    width: 86.94px;
+    height: 100%;
+    left: 315.13px;
 }
+
 .lista {
 position: relative;
 left: 30px;
@@ -157,7 +158,8 @@ font-weight: 700;
         }
         main {
         display: flex;
-       
+       padding-left: 19px;
+       padding-right: 19px;
         }
         .container2,
         .container {
@@ -173,6 +175,26 @@ font-weight: 700;
         order: 0;
         margin-right: 0;
         }
+        .nav {
+position: absolute;
+bottom: 5px;
+left: 20px;
+font-size: 18px;
+cursor: pointer; 
+color: #F3F3F3;
+text-decoration: none;
+ }
+.abajo {
+ font-weight: 700;
+font-size: 20px;
+margin-right: 40px;
+}
+.imagen_pie {
+    width: 92px;
+    height: 80px;
+    position: relative;
+    left: 1050px;    
+}
 
     }
 .contacto ul {
@@ -190,6 +212,12 @@ font-weight: 400;
 display: block;
 padding: 10px;
 top: 40px;
+}
+.imagen_pie {
+    width: 92px;
+    height: 80px;
+    color: #F3F3F3;
+    
 }
 
     
