@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500&display=swap');
 
-* {
+* {/* configuracion inicial para que se aplique en general */
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -14,7 +14,7 @@ background-color: rgb(231, 226, 226);
     padding: 25px 10px;
     background-color: #222222;
     color: #39B24A;
-    display: flex;
+    display: flex; /* alinea a los divs de forma horizontal*/
     flex-direction: row;
 }
 
@@ -146,6 +146,7 @@ font-weight: 700;
     top: 55px;
     right: 20px;
         }
+    /* media query: ordena que a partir de 767px-o el valor que quieras- aparezca o desparezcan elementos o cambien su ubicacion */
     @media screen and (min-width: 767px) {
         .contacto {
         display: flex;
@@ -198,6 +199,7 @@ margin-right: 40px;
 
     }
 .contacto ul {
+/*importante que el selector nombre ul para afectar los cambios*/
 list-style: none;
 padding: 0;
 margin: 0;
@@ -205,6 +207,7 @@ display: flex;
 flex-direction: row;
 }
 .contacto a {
+/*importante que el selector nombre a para dar estilo y formato a cada boton*/
 text-decoration: none;
 color: #F3F3F3;
 margin-right: 15px;
