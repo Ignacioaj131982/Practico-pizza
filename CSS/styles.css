@@ -16,18 +16,19 @@ background-color: rgb(231, 226, 226);
     color: #39B24A;
     display: flex; /* alinea a los divs de forma horizontal*/
     flex-direction: row;
+   height: 100px;
 }
 
 .menu_icon {
 position: absolute;
-top: 55px;
+top: 40px;
 right: 20px;
 font-size: 24px;
 cursor: pointer;
 }
 
 .pizza_front {
-padding: 25px;
+padding: 10px;
 }
 .white {
     color: white;
@@ -46,13 +47,15 @@ color: #39B24A;
 .imagen {
 width: 92px;
 height: 80px;
+position: relative;
+bottom: 15px;
 }
 .container {
 padding-top: 30px; 
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 464px;
+width: 360px;
 height: 330.75px;
 border-radius: 5px;
 background-color: #FFFFFF;
@@ -61,7 +64,7 @@ text-align: center;
 margin-top: 20px;
 margin-bottom: 20px;
 margin-left: 8px;
-margin-right: 8px;
+margin-right: 0px;
 }
 .card_content {
 text-align: left;
@@ -77,7 +80,7 @@ align-items: flex-start;
 .top_five {
 padding-top: 40px;
 position: relative;
-right: 140px;
+right: 90px;
 color: #222222;
 font-weight: 700;
 }
@@ -85,7 +88,7 @@ font-weight: 700;
     position: relative;
     width: 86.94px;
     height: 100%;
-    left: 315.13px;
+    left: 200px;
 }
 
 .lista {
@@ -95,16 +98,20 @@ bottom: 110px;
 text-align: left;
 font-weight: 700;
 }
+.envio_gratis h2{
+font-size: 20px;
 
+}
 .container2 {
     padding-top: 30px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 464px;
+    width: 360px;
     height: 330.75px;
     border-radius: 5px;
     background-image: url('/IMG/delivery.jpg');
+    background-position: center;
     color: #FC200C;
     text-align: center;
     margin-top: 20px;
@@ -117,6 +124,7 @@ font-weight: 700;
     color: #FFFFFF;
     }
     .pie {
+    height: 84px;
     background-color: #222222;
     padding: 25px 10px;
     display: flex;
@@ -128,12 +136,16 @@ font-weight: 700;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    }
+    position: relative;
+    right: 25px;
+        }
     .nav a {
     text-decoration: none;
-    color: #FFFFFF;   
-    margin-right: 15px; 
+    color: #F3F3F3;   
+    margin-right: 10px; 
     font-weight: 400;
+    font-size: 10px;
+    
     }
     .abajo {
     font-weight: 700;
@@ -146,6 +158,10 @@ font-weight: 700;
     top: 55px;
     right: 20px;
         }
+    .pizza_front_bottom h3 {
+    position: relative;
+    left: 10px;
+    }
     /* media query: ordena que a partir de 767px-o el valor que quieras- aparezca o desparezcan elementos o cambien su ubicacion */
     @media screen and (min-width: 767px) {
         .contacto {
@@ -165,21 +181,24 @@ font-weight: 700;
         .container2,
         .container {
            flex: 1;
-           background-repeat: no-repeat;
-           background-size: cover;
+           
         } 
         .container {
         order: 1;
         margin-left: 0;
+        width: 491px;
         }
         .container2 {
         order: 0;
         margin-right: 0;
+        background-size: cover;
+        background-position: 30px 10%;
+        background-repeat: no-repeat;
+        margin-right: 10px;   
         }
-        .nav {
-position: absolute;
-bottom: 5px;
-left: 20px;
+        .nav ul{
+position: relative;
+right: 1100px;
 font-size: 18px;
 cursor: pointer; 
 color: #F3F3F3;
@@ -194,12 +213,22 @@ margin-right: 40px;
     width: 92px;
     height: 80px;
     position: relative;
-    left: 1050px;    
+    left: 1070px; 
+       
 }
-
+.pizza_front_bottom {
+    position: relative;
+    left: 570px;
+}
+.envio_gratis h2{
+position: relative;
+font-size: 23px;
+bottom: 12px;
     }
 .contacto ul {
 /*importante que el selector nombre ul para afectar los cambios*/
+position: relative;
+bottom: 20px;
 list-style: none;
 padding: 0;
 margin: 0;
@@ -220,7 +249,36 @@ top: 40px;
     width: 92px;
     height: 80px;
     color: #F3F3F3;
-    
+     
+}
+.pizza_front_bottom {
+padding-left: 20px;
+}
+.pie {
+height: 150px;
 }
 
-    
+.nav {
+position: relative;
+right: 100px;
+}
+.nav a {
+font-size: 16px;
+}
+.nav li {
+padding: 5px 0;
+}
+.top_five {
+    padding-top: 40px;
+    position: relative;
+    left: -200px;
+    color: #222222;
+    font-weight: 700;
+    }
+    .ingredientes img {
+        position: relative;
+        width: 100px;
+        height: 100%;
+        left: 310px;
+    }
+    }
